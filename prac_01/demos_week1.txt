@@ -1,0 +1,27 @@
+algo for chess:
+read rules and instructions
+gather board and full set of black and white pieces
+arrange in recommended order
+white to move first as per rules, lift first piece and move to desired square (as per rules)
+(black and white to take concurrent turns until check mate or time expires)
+black to move, same as white lift first piece and move to desired square (as per rules).
+if pieces interact, then so be it, move accordingly, any piece except king can be taken, by landing on same square, king can be put in danger by "check" and game ends by check mate: 
+repat until checkmate, stalemate  or timer ends
+
+
+algo for guessing numbers:
+
+algo
+Magic_number = 10
+Guess = input("Guess the number?")
+while guess === magic number
+	print ("Guess again")
+	guess = input("Guess the number ?")
+
+tv streaming service cost calculator
+
+get cost per month
+calculate annual cost 
+print annual cost 
+
+
