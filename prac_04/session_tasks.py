@@ -1,4 +1,5 @@
 """Retrives chosen name and prints as a number"""
+from operator import itemgetter
 
 """psuedo
 list names
@@ -28,17 +29,24 @@ print()"""
 #print(f"Total sum of numbers is {total}")
 
 
-data = [['Derek', 7], ['Xavier', 80], ['Bob', 612], ['Chantenelle', 9]]
+name_to_score = {'Derek': 7, 'Xavier': 80, 'Bob': 612, 'Chantenelle': 9}
+width = max(len(name) for name in name_to_score)
 
-max_name_width = max((len(pair[0])) for pair in data)
-max_number_width = max((len(str(pair[1]))) for pair in data)
+for name, score in name_to_score:
+    print(f"{name:{width}} = {score:3}")
+
+    """
+for name in sorted(name_to_score, key=itemgetter(1), reverse=True):
+    print(f"{name:{width}} = {name_to_score[name]:3}")
+    """
+"""
+max_number_width = max((len(str(pair[1]))) for pair in name_to_score)
 
 print(max_name_width)
 print(max_number_width)
 
 for name, number in data:
     print(f"{name}:< (max_name_width) = {number}:> (max_number_width)")
-
-
+"""
 
 
